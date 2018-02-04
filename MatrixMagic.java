@@ -1,3 +1,6 @@
+/**
+Given a matrix, mark all the rows and columns of each 0 in the matrix
+**/
 import java.util.*;
 
 class MatrixMagic {
