@@ -8,12 +8,6 @@ public class Graph {
     private List<Integer> adjacencyList[];
     private int[][] adjacencyMatrix;
 
-    Graph() {
-        this.numVertices = 0;
-        this.adjacencyList = null;
-        this.adjacencyMatrix = new int[0][0];
-    }
-
     Graph(int numVertices) {
         this.numVertices = numVertices;
         this.adjacencyMatrix = new int[numVertices][numVertices];
