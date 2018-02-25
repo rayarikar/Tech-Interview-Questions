@@ -3,12 +3,12 @@ package graph;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Graph {
+public class UndirectedGraph {
     private int numVertices;
     private List<Integer> adjacencyList[];
     private int[][] adjacencyMatrix;
 
-    Graph(int numVertices) {
+    UndirectedGraph(int numVertices) {
         this.numVertices = numVertices;
         this.adjacencyMatrix = new int[numVertices][numVertices];
         for (int row = 0; row < numVertices; row++) {
