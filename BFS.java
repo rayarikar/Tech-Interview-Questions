@@ -6,7 +6,7 @@ class BFS {
     // Write breadth-first search in a matrix
     static void BFSOnMatrix(String[][] inputMatrix) {
         printMatrix(inputMatrix);
-        System.out.println("BFS output: \n");
+        System.out.println("SearchGraph output: \n");
         for (int row = 0; row < inputMatrix.length; row++) {
             for (int col = 0; col < inputMatrix[0].length; col++) {
                 System.out.print(" " + inputMatrix[row][col]);

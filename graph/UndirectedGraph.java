@@ -8,6 +8,18 @@ public class UndirectedGraph {
     private List<Integer> adjacencyList[];
     private int[][] adjacencyMatrix;
 
+    public int getNumVertices() {
+        return numVertices;
+    }
+
+    public List<Integer>[] getAdjacencyList() {
+        return adjacencyList;
+    }
+
+    public int[][] getAdjacencyMatrix() {
+        return adjacencyMatrix;
+    }
+
     UndirectedGraph(int numVertices) {
         this.numVertices = numVertices;
         this.adjacencyMatrix = new int[numVertices][numVertices];
