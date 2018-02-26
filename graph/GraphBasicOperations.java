@@ -24,7 +24,9 @@ public class GraphBasicOperations {
         graphBasicOperations.buildGraph(graph);
         System.out.println("Done building a graph");
         graphBasicOperations.printAdjacencyDetails(graph);
-        System.out.println("\nPrinting BSF for the current undirected graph");
+        System.out.println("\nPrinting BFS for the current undirected graph");
         SearchGraph.bfsUndirectedGraph(graph, 0);
+        System.out.println("\nPrinting DFS for the current undirected graph");
+        SearchGraph.dfsUndirectedGraph(graph, 0);
     }
 }
