@@ -49,6 +49,17 @@ public class UndirectedGraph {
         }
     }
 
+    public List<Integer> getVertexChildren(int vertex) {
+        int[][] adjMatrix = this.getAdjacencyMatrix();
+        List<Integer> children = new ArrayList<>();
+        for (int i = 0; i < this.getNumVertices(); i++) {
+            if (adjMatrix[vertex][i] == 1) {
+                children.add(i);
+            }
+        }
+        return children;
+    }
+
     public void printAdjacencyMatrix() {
         System.out.println("\nPrinting Adjacency Matrix");
         for (int row = 0; row < numVertices; row++) {
